@@ -1,0 +1,365 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CGPA CALCULATOR</title>
+		<style>
+			body{ margin: 0px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  }
+			input:focus{ border:mediumslateblue groove 2px; }
+			.pad{ padding:10px}
+		.padder{ padding: 20px;}
+		.Hcolor{ background: mediumslateblue;}
+		.Fcolor{ background:slateblue; color: white;}
+		.font1{ font-size: 24pt; color: white;}
+		.m-auto{ margin:auto 320px; height: auto}
+		</style>
+
+	</head>
+	<body>
+		<header class="Hcolor pad font1">
+			<b>CGPA</b> <b>C</b>alculator <b>V 1.0.0</b>
+		</header>
+		<div class="padder"></div>
+		<div class="pad"></div>
+
+		<div class="pad m-auto" style="box-shadow: 0px 0px 4px grey; background: transparent; border-radius: 4px">
+		<form onsubmit="return false ">
+			<caption><h3 style="text-align: center">GP CALCULATOR</h3>
+			</caption>
+			<hr style="width:60%; color: grey; ">
+		<div>
+			<input type="text" placeholder="Course 1" value="" class="pad" id="c1">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u1">
+			<select class="pad" id="g1">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 2" value="" class="pad" id="c2">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u2">
+			<select class="pad" id="g2">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 3" value="" class="pad" id="c3">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u3">
+			<select class="pad" id="g3">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 4" value="" class="pad" id="c4">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u4">
+			<select class="pad" id="g4">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 5" value="" class="pad" id="c5">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u5">
+			<select class="pad" id="g5">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			
+			<input type="text" placeholder="Course 6" value="" class="pad" id="c6">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u6">
+			<select class="pad" id="g6">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+<div style="display: none;" id="2nd">			
+			<input type="text" placeholder="Course 7" value="" class="pad" id="c7">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u7">
+			<select class="pad" id="g7">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 8" value="" class="pad" id="c8">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u8">
+			<select class="pad" id="g8">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+
+			<input type="text" placeholder="Course 9" value="" class="pad" id="c9">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u9">
+			<select class="pad" id="g9">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 10" value="" class="pad" id="c10">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u10">
+			<select class="pad" id="g10">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 11" value="" class="pad" id="c11">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u11">
+			<select class="pad" id="g11">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+
+			<input type="text" placeholder="Course 12" value="" class="pad" id="c12">
+			<input type="text" placeholder="Unit Load" value="" class="pad" id="u12">
+			<select class="pad" id="g12">
+				<option value="">Select Grade</option>
+				<option value="5">A</option>
+				<option value="4">B</option>
+				<option value="3">C</option>
+				<option value="2">D</option>
+				<option value="1">E</option>
+				<option value="0">F</option>
+			</select>
+			<br><br>
+		</div>
+	</div>
+			<button class="pad" onclick="CalcGP()">Calculate GP</button>
+			<button class="pad" onclick="More()" id="btn2">More Courses</button>
+			<input disabled type="text" class="pad" style="float:right" placeholder="Result"  id="RGP"><br><br>
+
+			<caption><h3 style="text-align: center">CGP CALCULATOR</h3>
+			</caption>
+			<hr style="width:60%; color: grey; ">
+			<input type="text" placeholder="Enter First Semester GP" value="" class="pad" id="fsg" style="width:40%; margin-right: 5px; float: none;">
+			<input type="text" placeholder="Enter Second Semester GP" value="" class="pad" id="ssg" style="width:40%; margin-right: 5px; float: right;"> <br><br><br>
+
+			<button class="pad" onclick="CalcCGP()">Calculate CGP</button>
+			
+			<input disabled type="text" class="pad" style="float:right" placeholder="Result" id="RCGP"><br><br>
+
+			<br><br>
+
+			<caption><h3 style="text-align: center">CGPA CALCULATOR</h3>
+			</caption>
+			<hr style="width:60%; color: grey; ">
+
+			<input type="text" placeholder="Enter Course Duration(4/5/7/../.)" value="" class="pad" id="cgp0" style="width:20%; margin-right: 5px; float: none"><br><br><br>
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp1" style="width:20%; margin-right: 5px; float: none"> 
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp2" style="width:20%; margin-right: 5px; float: none"> 
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp3" style="width:20%; margin-right: 5px; float: none">
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp4" style="width:20%; margin-right: 5px; float: none"> 
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp5" style="width:20%; margin-right: 5px; float: none">
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp6" style="width:20%; margin-right: 5px; float: none"> 
+			
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp7" style="width:20%; margin-right: 5px; float: none">
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp8" style="width:20%; margin-right: 5px; float: none"> 
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp9" style="width:20%; margin-right: 5px; float: none">
+			
+			<input type="text" placeholder="Enter CGP" value="" class="pad" id="cgp10" style="width:20%; margin-right: 5px; float: none"> <input type="text" placeholder="Enter CGP" value="" class="pad" id="gp1" style="width:20%; margin-right: 5px; float: none">
+			
+			 <br><br><br>
+
+			<button class="pad" onclick="CalcCGPA()">Calculate CGPA</button>
+			
+			<input disabled type="text" class="pad" style="float:right" placeholder="Result" id="RCGPA"><br><br>
+
+			<br><br>
+
+		</form>
+		</div>
+
+		<div class="pad"></div>
+		<div class="padder"></div>
+		<footer class="padder Fcolor">
+			<center>&copy; 2018 | Designed by Zappernet</center>
+		</footer>
+		<script>
+		function _(x){
+			return document.getElementById(x);
+		}
+		</script>
+	<script>
+
+		function More(){
+			var snd = _("2nd");
+			var btn2 = _("btn2");
+			if(snd.style.display == "none"){
+				snd.style.display="block";
+				btn2.innerHTML="Remove Courses"
+			}else{
+				snd.style.display = "none"
+				btn2.innerHTML= "More Courses"
+			}
+		}
+			function CalcGP(){
+				var u1 = Number(_("u1").value);
+				var u2 = Number(_("u2").value);
+				var u3 = Number(_("u3").value);
+				var u4 = Number(_("u4").value);
+				var u5 = Number(_("u5").value);
+				var u6 = Number(_("u6").value);
+				var u7 = Number(_("u7").value);
+				var u8 = Number(_("u8").value);
+				var u9 = Number(_("u9").value);
+				var u10 = Number(_("u10").value);
+				var u11 = Number(_("u11").value);
+				var u12 = Number(_("u12").value);
+				////////////////////////////////
+				var g1 = Number(_("g1").value);
+				var g2 = Number(_("g2").value);
+				var g3 = Number(_("g3").value);
+				var g4 = Number(_("g4").value);
+				var g5 = Number(_("g5").value);
+				var g6 = Number(_("g6").value);
+				var g7 = Number(_("g7").value);
+				var g8 = Number(_("g8").value);
+				var g9 = Number(_("g9").value);
+				var g10 = Number(_("g10").value);
+				var g11 = Number(_("g11").value);
+				var g12 = Number(_("g12").value);
+				////////////////////////////////
+				var c1 = Number(_("c1").value);
+				var c2 = Number(_("c2").value);
+				var c3 = Number(_("c3").value);
+				var c4 = Number(_("c4").value);
+				var c5 = Number(_("c5").value);
+				var c6 = Number(_("c6").value);
+				var c7 = Number(_("c7").value);
+				var c8 = Number(_("c8").value);
+				var c9 = Number(_("c9").value);
+				var c10 = Number(_("c10").value);
+				var c11 = Number(_("c11").value);
+				var c12 = Number(_("c12").value);
+
+				var ug1 = u1*g1;
+				var ug2 = u2*g2;
+				var ug3 = u3*g3;
+				var ug4 = u4*g4;
+				var ug5 = u5*g5;
+				var ug6 = u6*g6;
+				var ug7 = u7*g7;
+				var ug8 = u8*g8;
+				var ug9 = u9*g9;
+				var ug10 = u10*g10;
+				var ug11 = u11*g11;
+				var ug12 = u12*g12;
+
+				var UG = ug1+ug2+ug3+ug4+ug5+ug6+ug7+ug8+ug9+ug10+ug11+ug12;
+				var U = u1+u2+u3+u4+u5+u6+u7+u8+u9+u10+u11+u12;
+
+				var GP = UG/U;
+
+				var RGP = _("RGP");
+				RGP.value = GP
+			}
+			
+	
+
+			 function CalcCGP() {
+				 var fsg = Number(_("fsg").value);
+				var ssg = Number(_("ssg").value);
+				var add = fsg + ssg;
+				var CGP = add/2;
+				var RCGP = _("RCGP");
+				RCGP.value = CGP
+				
+			 }
+
+			 function CalcCGPA(){
+				var cgp0 = Number(_("cgp0").value);
+				 var cgp1 = Number(_("cgp1").value);
+				 var cgp2 = Number(_("cgp2").value);
+				 var cgp3 = Number(_("cgp3").value);
+				 var cgp4 = Number(_("cgp4").value);
+				 var cgp5 = Number(_("cgp5").value);
+				 var cgp6 = Number(_("cgp6").value);
+				 var cgp7 = Number(_("cgp7").value);
+				 var cgp8 = Number(_("cgp8").value);
+				 var cgp9 = Number(_("cgp9").value);
+				 var cgp10 = Number(_("cgp10").value);
+
+				///////////////////////////////////
+
+				var CGPall = cgp1+cgp2+cgp3+cgp4+cgp5+cgp6+cgp7+cgp8+cgp9+cgp10;
+				var CGPA = CGPall / cgp0;
+				var RCGPA = _("RCGPA");
+				RCGPA.value = CGPA
+
+			 }
+	</script>
+	</body>
+</html>
